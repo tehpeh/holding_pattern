@@ -1,0 +1,21 @@
+#contact-form
+  %p
+    This domain may be for sale. To enquire please fill and submit the form below:
+
+  %form{name: 'contact', action: 'mail', method: 'post'}
+    #name
+      %label
+        Name:
+        %br
+        %input{type: 'text', name: 'name'}
+    #email
+      %label
+        Email:
+        %br
+        %input{type: 'text', name: 'email'}
+    #message
+      %label
+        Message:
+        %br
+        %textarea{cols: '64', rows: '10', name: 'message'}
+    %input{type: 'submit', value: 'Send'}
