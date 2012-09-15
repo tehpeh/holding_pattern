@@ -13,6 +13,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+    newrelic_rpm (3.4.2.1)
     polyglot (0.3.3)
     pony (1.4)
       mail (> 2.0)
@@ -50,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   foreman
   haml
+  newrelic_rpm
   pony
   sinatra
   sinatra-reloader

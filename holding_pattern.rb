@@ -16,6 +16,7 @@ configure :development do
 end
 
 configure :production do
+  require 'newrelic_rpm'
   before do
     set :static_cache_control, [:public, :max_age => 1 * MONTH]
   end
