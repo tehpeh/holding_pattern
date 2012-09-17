@@ -1,7 +1,9 @@
 %html
 %head
+  = ::NewRelic::Agent.browser_timing_header rescue ""
   %title= @title || request.host
 %body
   %h1 #{@site || request.host} coming soon
   .flash= @error
   = yield
+  = ::NewRelic::Agent.browser_timing_footer rescue ""
